@@ -1,0 +1,8 @@
+File Requirements:
+xlsx files only.
+Only the 1st sheet gets processed.
+Minimal column number: 2.
+Minimal column length: 9 rows (including the header row).
+All columns must be of the same length.
+The 1st row of each column must be the column's header.
+The value of each row in the column must be unique.
