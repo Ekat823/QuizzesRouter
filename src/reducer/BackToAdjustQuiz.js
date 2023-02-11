@@ -1,7 +1,7 @@
 const backToAdjustQuiz = (state) => {
 
-    const selectQuestion = [state.initialSelectQuestionOption, ...state.quizOptions];
-    const selectAnswer = [state.initialSelectAnswerOption, ...state.quizOptions];
+    const selectQuestion = [state.question, state.initialSelectQuestionOption, ...state.quizOptions];
+    const selectAnswer = [state.answer, state.initialSelectAnswerOption, ...state.quizOptions];
 
     let newQuizStatus = "";
 
@@ -19,7 +19,8 @@ const backToAdjustQuiz = (state) => {
         ...state, 
         quizStatus: newQuizStatus,
         selectQuestion: selectQuestion, 
-        selectAnswer: selectAnswer}
+        selectAnswer: selectAnswer,
+      }
 }
 
 export default backToAdjustQuiz
