@@ -56,7 +56,6 @@ const Library = () => {
             </ListGroup.Item>
           )
           )}
-          
           </ListGroup>
         </Card.Body>
       </Card>

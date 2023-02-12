@@ -15,7 +15,6 @@ const HomeSignUpPage = () => {
 
       <Card style={{
         maxWidth: "350px",
-        maxHeight: "508px",
         border: "2px solid balck",
         borderRadius: "7px"
       }}
@@ -23,7 +22,7 @@ const HomeSignUpPage = () => {
         <Card.Img
           src={require("./header.png")}
           alt="Card image"
-          style={{ backgroundColor: "#081737" }}
+          style={{ backgroundColor: "#002b37", borderRadius:  "7px 7px 0 0"  }}
         />
         <Card.ImgOverlay>
           <Card.Body
@@ -41,7 +40,7 @@ const HomeSignUpPage = () => {
           <ListGroup>
             <ListGroup.Item
               style={{
-                backgroundColor: "#081737",
+                backgroundColor:  "#002b37",
                 color: "white",
                 border: "2px solid white"
               }}
@@ -50,7 +49,7 @@ const HomeSignUpPage = () => {
             </ListGroup.Item>
             <ListGroup.Item
               style={{
-                backgroundColor: "#081737",
+                backgroundColor:  "#002b37",
                 color: "white",
                 border: "2px solid white"
               }}

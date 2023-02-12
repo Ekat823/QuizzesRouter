@@ -31,15 +31,10 @@ function App() {
         <nav><NavBar /></nav>
         <Routes>
 
-          <Route index element={state.homeStatus === "guest" ?
+          <Route index element={
             <Container>
-              <Row>
-                <Col sm={12} lg={4}><Home /></Col>
-                <Col sm={12} lg={4}><Library /></Col>
-                <Col sm={12} lg={4}><CreateQuiz /></Col>
-              </Row>
+              <Home />
             </Container>
-            : <Navigate replace to={"/user"} />
           } />
 
           <Route path="user" element={

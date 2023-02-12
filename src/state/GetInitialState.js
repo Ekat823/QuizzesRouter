@@ -32,6 +32,8 @@ const getInitialState = () => ({
   averageScore: 0,
   //-----Library
   categories: ['Anatomy', 'Physics', 'Anthropology', 'Astrology', 'Mathematics', 'Astronomy', 'Keyboard Shortcuts', 'Biology', 'Chemistry', 'Fine Art', 'Music', 'Geography', 'Health Care', 'History', 'Languages', 'Literature', 'Psychology'],
+  //-----User
+  userScore: 0,
 
 })
 export default getInitialState

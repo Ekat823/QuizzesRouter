@@ -30,7 +30,7 @@ const CardCreateQuiz = () => {
               marginTop: "-10px"
             }}
           >
-            Create Your Own Quiz
+            Create Quiz
           </Card.Body>
         </Card.ImgOverlay>
 
