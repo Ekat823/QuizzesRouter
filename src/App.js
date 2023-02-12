@@ -23,7 +23,7 @@ function App() {
 
   const [state, dispatch] = useReducer(reducer, getInitialState());
 
-  console.log('renderAnswers', state.renderAnswers);
+  //console.log('renderAnswers', state.renderAnswers);
 
   return (
     <QuizContext.Provider value={{ state: state, dispatch: dispatch }}>

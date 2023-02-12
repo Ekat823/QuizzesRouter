@@ -13,8 +13,7 @@ const NavBar = () => {
           <NavLink to="/">
             <img
               src={require('./images/home.png')}
-              width='50%'
-              height='50%'
+              className='img-navbar'
               alt={'Home_icon'}
             />
           </NavLink>
@@ -22,8 +21,7 @@ const NavBar = () => {
           <NavLink to="/user">
           <img
               src={require('./images/user.png')}
-              width='50%'
-              height='50%'
+              className='img-navbar'
               alt={'User_icon'}
             />
           </NavLink>
@@ -31,8 +29,7 @@ const NavBar = () => {
           <NavLink to="/group">
           <img
               src={require('./images/group.png')}
-              width='50%'
-              height='50%'
+              className='img-navbar'
               alt={'Group_icon'}
             />
           </NavLink>
@@ -40,8 +37,7 @@ const NavBar = () => {
           <NavLink to="/create_quiz">
           <img
               src={require('./images/create.png')}
-              width='50%'
-              height='50%'
+              className='img-navbar'
               alt={'Create_icon'}
             />
           </NavLink>
@@ -49,8 +45,7 @@ const NavBar = () => {
           <NavLink to="/quiz_library">
           <img
               src={require('./images/storage.png')}
-              width='50%'
-              height='50%'
+              className='img-navbar'
               alt={'Storage_icon'}
             />
           </NavLink>
@@ -58,8 +53,7 @@ const NavBar = () => {
           <NavLink to="/help">
           <img
               src={require('./images/question.png')}
-              width='50%'
-              height='50%'
+              className='img-navbar'
               alt={'Question_icon'}
             />
           </NavLink>
@@ -67,8 +61,7 @@ const NavBar = () => {
           <NavLink to="/search">
           <img
               src={require('./images/search.png')}
-              width='50%'
-              height='50%'
+              className='img-navbar'
               alt={'Search_icon'}
             />
           </NavLink>
