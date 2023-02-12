@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import { QuizContext } from "../App";
 
 const Library = () => {
+
+  const quizContext = useContext(QuizContext);
+
   return (
     <Container>
 
       <Card style={{
         maxWidth: "350px",
+        maxHeight: "550px",
         border: "1px solid balck",
         borderRadius: "7px"
       }}
@@ -16,8 +21,8 @@ const Library = () => {
         <Card.Img
           src={require("./header.png")}
           alt="Card image"
-          style={{ backgroundColor: "#240101", borderRadius: "7px 7px 0 0"}}
-          
+          style={{ backgroundColor: "#002b37", borderRadius: "7px 7px 0 0" }}
+
         />
         <Card.ImgOverlay>
           <Card.Body
@@ -31,141 +36,27 @@ const Library = () => {
           </Card.Body>
         </Card.ImgOverlay>
 
-        <Card.Body style={{overflowX: "hidden"}}>
+        <Card.Body style={{ overflowX: "hidden" }}>
           <ListGroup>
 
+          {quizContext.state.categories.sort().map((el, i) => (
             <ListGroup.Item
-              variant="danger"
-              style={{
-                border: "1px solid white",
-                marginTop: "1px",
-                marginBottom: "1px"
-              }}
-              action
-            >
-              Quiz 1
+            style={{
+              border: "1px solid white",
+              backgroundColor: "#002b37",
+              borderRadius: "7px",
+              color: "white",
+              marginTop: "1px",
+              marginBottom: "1px"
+            }}
+            key={i}
+            action
+            >             
+                {el}            
             </ListGroup.Item>
-            <ListGroup.Item
-              variant="danger"
-              style={{
-                border: "1px solid white",
-                marginTop: "1px",
-                marginBottom: "1px"
-              }}
-              action
-            >
-              Quiz 2
-            </ListGroup.Item>
-            <ListGroup.Item
-               variant="danger"
-               style={{
-                 border: "1px solid white",
-                 marginTop: "1px",
-                 marginBottom: "1px"
-               }}
-               action
-            >
-              Quiz 3
-            </ListGroup.Item>
-            <ListGroup.Item
-              variant="danger"
-              style={{
-                border: "1px solid white",
-                marginTop: "1px",
-                marginBottom: "1px"
-              }}
-              action
-            >
-              Quiz 4
-            </ListGroup.Item>
-            <ListGroup.Item
-               variant="danger"
-               style={{
-                 border: "1px solid white",
-                 marginTop: "1px",
-                 marginBottom: "1px"
-               }}
-               action
-            >
-              Quiz 5
-            </ListGroup.Item>
-            <ListGroup.Item
-              variant="danger"
-              style={{
-                border: "1px solid white",
-                marginTop: "1px",
-                marginBottom: "1px"
-              }}
-              action
-            >
-              Quiz 6
-            </ListGroup.Item>
-            <ListGroup.Item
-               variant="danger"
-               style={{
-                 border: "1px solid white",
-                 marginTop: "1px",
-                 marginBottom: "1px"
-               }}
-               action
-            >
-              Quiz 7
-            </ListGroup.Item>
-            <ListGroup.Item
-               variant="danger"
-               style={{
-                 border: "1px solid white",
-                 marginTop: "1px",
-                 marginBottom: "1px"
-               }}
-               action
-            >
-              Quiz 8
-            </ListGroup.Item>
-            <ListGroup.Item
-               variant="danger"
-               style={{
-                 border: "1px solid white",
-                 marginTop: "1px",
-                 marginBottom: "1px"
-               }}
-               action
-            >
-              Quiz 9
-            </ListGroup.Item>
-            <ListGroup.Item
-               variant="danger"
-               style={{
-                 border: "1px solid white",
-                 marginTop: "1px",
-                 marginBottom: "1px"
-               }}
-               action
-            >
-              Quiz 10
-            </ListGroup.Item>
-            <ListGroup.Item
-               variant="danger"
-               style={{
-                 border: "1px solid white",
-                 marginTop: "1px",
-                 marginBottom: "1px"
-               }}
-               action
-            >
-              Quiz 11
-            </ListGroup.Item>
-            <ListGroup.Item
-               variant="danger"
-               style={{
-                 border: "1px solid white",
-                 marginTop: "1px",
-                 marginBottom: "1px"
-               }}
-               action
-            >
-              Quiz 12
-            </ListGroup.Item>
+          )
+          )}
+          
           </ListGroup>
         </Card.Body>
       </Card>

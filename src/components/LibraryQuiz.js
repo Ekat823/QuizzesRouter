@@ -7,7 +7,7 @@ import { QuizContext } from "../App";
 
 const LibraryQuiz = () => {
   
-  const quizContext = useContext(QuizContext)
+  const quizContext = useContext(QuizContext);
 
   return (
     <>

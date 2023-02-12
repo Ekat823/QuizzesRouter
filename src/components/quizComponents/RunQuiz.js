@@ -10,7 +10,7 @@ import { QuizContext } from "../../App";
 
 const RunQuiz = () => {
 
-  const quizContext = useContext(QuizContext)
+  const quizContext = useContext(QuizContext);
 
   return (
     <Container>
