@@ -27,6 +27,11 @@ function App() {
 
   return (
     <QuizContext.Provider value={{ state: state, dispatch: dispatch }}>
+
+      <Container>
+        <h1>QUIZZES</h1>
+      </Container>
+
       <BrowserRouter>
         <nav><NavBar /></nav>
         <Routes>

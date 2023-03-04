@@ -2,73 +2,76 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Container } from "react-bootstrap";
+import Image from 'react-bootstrap/Image'
 
 const NavBar = () => {
   return (
-    <>
-      <Navbar className="justify-content-center" style={{backgroundColor: "white"}}>
+    <Container fluid>
+      <Navbar className="justify-content-center" bg="dark" style={{ padding: "3px" }} >
 
-        <Navbar.Brand></Navbar.Brand>
+        <Navbar.Brand ></Navbar.Brand>
+
         <Nav>
           <NavLink to="/">
-            <img
+            <Image fluid
               src={require('./images/home.png')}
-              className='img-navbar'
+              style={{ padding: "20%" }}
               alt={'Home_icon'}
             />
           </NavLink>
 
           <NavLink to="/user">
-          <img
+            <Image fluid
               src={require('./images/user.png')}
-              className='img-navbar'
+              style={{ padding: "20%" }}
               alt={'User_icon'}
             />
           </NavLink>
 
           <NavLink to="/group">
-          <img
+            <Image fluid
               src={require('./images/group.png')}
-              className='img-navbar'
+              style={{ padding: "20%" }}
               alt={'Group_icon'}
             />
           </NavLink>
 
           <NavLink to="/create_quiz">
-          <img
+            <Image fluid
               src={require('./images/create.png')}
-              className='img-navbar'
+              style={{ padding: "20%" }}
               alt={'Create_icon'}
             />
           </NavLink>
 
           <NavLink to="/quiz_library">
-          <img
+            <Image fluid
               src={require('./images/storage.png')}
-              className='img-navbar'
+              style={{ padding: "20%" }}
               alt={'Storage_icon'}
             />
           </NavLink>
 
           <NavLink to="/help">
-          <img
+            <Image fluid
               src={require('./images/question.png')}
-              className='img-navbar'
+              style={{ padding: "20%" }}
               alt={'Question_icon'}
             />
           </NavLink>
 
           <NavLink to="/search">
-          <img
+            <Image fluid
               src={require('./images/search.png')}
-              className='img-navbar'
+              style={{ padding: "20%" }}
               alt={'Search_icon'}
             />
           </NavLink>
         </Nav>
 
       </Navbar>
-    </>
+    </Container>
   )
 }
 

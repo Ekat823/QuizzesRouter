@@ -1,89 +1,54 @@
 import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
 import { QuizContext } from "../../App";
-import ButtonSignUpStartPage from "./componentsForHome/ButtonSignUpStartPage";
-import FormLogInStartPage from "./componentsForHome/FormLogInStartPage";
+import Image from 'react-bootstrap/Image'
 
 const HomeStartPage = () => {
 
   const quizContext = useContext(QuizContext)
 
   return (
-    <Container>
+    <Container fluid="md">
 
-      <Card style={{
-        maxWidth: "350px",
-        border: "2px solid balck",
-        borderRadius:  "7px" 
-      }}
-      >
-        <Card.Img
-          src={require("./header.png")}
-          alt="Card image"
-          style={{ backgroundColor: "#002b37", borderRadius:  "7px 7px 0 0"  }}
+      <h2 style={{textAlign: "center", marginTop: "20px"}}>Welcome to Quizzes!</h2>
+      <p style={{textAlign: "center"}}>Here you can turn any information into a quiz and easily memorize an overwhelming amount of data in a gamelike way.</p>
+
+      <button
+        style={{ backgroundColor: '#fab9b9', borderRadius: '50px', marginTop: '55px' }}>
+        <Image fluid
+          src={require('../images/createBW.png')}
+          alt={'Create_icon'}
         />
-        <Card.ImgOverlay>
-          <Card.Body
-            as="h5"
-            style={{
-              color: "white",
-              marginTop: "-20px"
-            }}
-          >
-            <big>Welcome!</big><br />
-            <small><small>Give it a try without signing up!</small></small>
-          </Card.Body>
-        </Card.ImgOverlay>
+        <span>CREATE QUIZ</span>
+      </button>
 
-        <Card.Body>
-          <ListGroup>
+      <button
+        style={{ backgroundColor: '#9bf9ab', borderRadius: '50px', marginTop: '15px' }}>
+        <Image fluid
+          src={require('../images/storageBW.png')}
+          alt={'Storage_icon'}
+        />
+        <span>QUIZ LIBRARY</span>
+      </button>
 
-            <ListGroup.Item
-              style={{
-                backgroundColor: "#002b37",
-                color: "white",
-                border: "2px solid white",
-                marginTop: "2px",
-                marginBottom: "2px"
-              }}
-            >
-              Unauthorized users can take library quizzes and create their own.
-            </ListGroup.Item>
+      <button
+        style={{ backgroundColor: '#a2f0f9', borderRadius: '50px', marginTop: '15px' }}>
+        <Image fluid
+          src={require('../images/userBW.png')}
+          alt={'User_icon'}
+        />
+        <span>LOG IN / SIGN UP</span>
+      </button>
 
-            <ListGroup.Item
-              style={{
-                backgroundColor: "#002b37",
-                color: "white",
-                border: "2px solid white"
-              }}
-            >
-              Alas, they cannot store selected library quizzes, save the ones they've created, and enjoy the benefits of groups.
-            </ListGroup.Item>
+      <button
+        style={{ backgroundColor: '#f9f76d', borderRadius: '50px', marginTop: '15px' }}>
+        <Image fluid
+          src={require('../images/questionBW.png')}
+          alt={'Question_icon'}
+        />
+        <span>FAQ</span>
+      </button>
 
-            <ListGroup.Item
-              style={{
-                backgroundColor: "#002b37",
-                color: "white",
-                border: "2px solid white"
-              }}
-            >
-              <ButtonSignUpStartPage />
-            </ListGroup.Item>
-
-            <ListGroup.Item
-              style={{
-                backgroundColor: "#002b37",
-                color: "white",
-                border: "2px solid white"
-              }}
-            >
-              <FormLogInStartPage />
-            </ListGroup.Item>
-          </ListGroup>
-        </Card.Body>
-      </Card>
     </Container >
   )
 }
