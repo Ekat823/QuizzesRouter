@@ -6,7 +6,7 @@ const getInitialState = () => ({
   //--------Home
   homePageStatus: "start", // "sign up"
   //-----Create Quiz
-  quizTitle: "(no quiz yet)",
+  quizTitle: "",
   userFile: [],
   fileName: "",
   quizOptions: [],

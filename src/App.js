@@ -1,13 +1,13 @@
 import React, { useReducer } from "react";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+//import Row from "react-bootstrap/Row";
+//import Col from "react-bootstrap/Col";
 import reducer from "./reducer/Reducer";
 import getInitialState from "./state/GetInitialState";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
-import Library from "./components/Library";
+//import Library from "./components/Library";
 import CreateQuiz from "./components/CreateQuiz";
 import UserPage from "./components/UserPage";
 import GroupPage from "./components/GroupPage";
