@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 const NavBar = () => {
   return (
     <>
-      <Navbar className="justify-content-center" style={{backgroundColor: "#002b37"}}>
+      <Navbar className="justify-content-center" style={{backgroundColor: "white"}}>
 
         <Navbar.Brand></Navbar.Brand>
         <Nav>
