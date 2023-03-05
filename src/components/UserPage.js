@@ -1,115 +1,57 @@
 import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
 import { QuizContext } from "../App";
+import ButtonCreatQuizNav from "./navigationButtons/ButtonCreatQuizNav";
+import { Image } from "react-bootstrap";
 
 const UserPage = () => {
 
   const quizContext = useContext(QuizContext);
 
   return (
-    <Container>
+    <Container fluid="md">
 
-      <Card style={{
-        maxWidth: "350px",
-        maxHeight: "550px",
-        border: "2px solid balck",
-        borderRadius: "7px"
-      }}
-      >
-        <Card.Img
-          src={require("./header.png")}
-          alt="Card image"
-          style={{ backgroundColor: "#002b37", borderRadius: "7px 7px 0 0" }}
+      <h2 style={{ textAlign: "center", marginTop: "20px" }}>User Name</h2>
+      <p style={{ textAlign: "center" }}>Score: {quizContext.state.userScore}</p>
+
+      <ButtonCreatQuizNav />
+
+      <button
+        style={{ backgroundColor: '#a2f0f9', borderRadius: '50px', marginTop: '15px' }}>
+        <Image fluid
+          src={require('./images/storageBW.png')}
+          alt={'Storage_icon'}
         />
-        <Card.ImgOverlay>
-          <Card.Body
-            as="h5"
-            style={{
-              color: "white",
-              marginTop: "-10px",
+        <span>CREATED QUIZZES: 0</span>
+      </button>
 
-            }}
-          >
-            User Name <small><span style={{ marginLeft: "5rem" }}>Score: {quizContext.state.userScore}</span></small>
-          </Card.Body>
-        </Card.ImgOverlay>
+      <button
+        style={{ backgroundColor: '#c9a1fb', borderRadius: '50px', marginTop: '15px' }}>
+        <Image fluid
+          src={require('./images/storageBW.png')}
+          alt={'Storage_icon'}
+        />
+        <span>FEATURED QUIZZES: 0</span>
+      </button>
 
-        <Card.Body>
-          <ListGroup>
+      <button
+        style={{ backgroundColor: '#9bf9ab', borderRadius: '50px', marginTop: '15px' }}>
+        <Image fluid
+          src={require('./images/groupBW.png')}
+          alt={'Storage_icon'}
+        />
+        <span>GROUPS: 0</span> <span>INVITATIONS: 0</span>
+      </button>
 
-            <ListGroup.Item
-              style={{
-                border: "1px solid white",
-                backgroundColor: "#002b37",
-                borderRadius: "7px",
-                color: "white",
-                marginTop: "1px",
-                marginBottom: "1px"
-              }}
-              action
-            >
-              Create Quiz
-            </ListGroup.Item>
-            <ListGroup.Item
-              style={{
-                border: "1px solid white",
-                backgroundColor: "#002b37",
-                borderRadius: "7px",
-                color: "white",
-                marginTop: "1px",
-                marginBottom: "1px"
-              }}
-              action
-            >
-              My Quizzes 0
-            </ListGroup.Item>
+      <button
+        style={{ backgroundColor: '#f9f76d', borderRadius: '50px', marginTop: '15px' }}>
+        <Image fluid
+          src={require('./images/groupBW.png')}
+          alt={'Storage_icon'}
+        />
+        <span>CREATE GROUP</span>
+      </button>
 
-            <ListGroup.Item
-              style={{
-                border: "1px solid white",
-                backgroundColor: "#002b37",
-                borderRadius: "7px",
-                color: "white",
-                marginTop: "1px",
-                marginBottom: "1px"
-              }}
-              action
-            >
-              Favorite Quizzes 0
-            </ListGroup.Item>
-
-            <ListGroup.Item
-              style={{
-                border: "1px solid white",
-                backgroundColor: "#002b37",
-                borderRadius: "7px",
-                color: "white",
-                marginTop: "1px",
-                marginBottom: "1px"
-              }}
-              action
-            >
-              My Groups 0 <span style={{ marginLeft: "3rem" }}>Invitations: 0</span>
-            </ListGroup.Item>
-
-            <ListGroup.Item
-              style={{
-                border: "1px solid white",
-                backgroundColor: "#002b37",
-                borderRadius: "7px",
-                color: "white",
-                marginTop: "1px",
-                marginBottom: "1px"
-              }}
-              action
-            >
-              Create Group
-            </ListGroup.Item>
-          </ListGroup>
-        </Card.Body>
-      </Card>
     </Container >
   )
 }

@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 //import Col from "react-bootstrap/Col";
 import reducer from "./reducer/Reducer";
 import getInitialState from "./state/GetInitialState";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 //import Library from "./components/Library";
@@ -28,8 +28,8 @@ function App() {
   return (
     <QuizContext.Provider value={{ state: state, dispatch: dispatch }}>
 
-      <Container>
-        <h1>QUIZZES</h1>
+      <Container style={{textAlign: 'center'}}>
+        <h1 style={{fontWeight: 700}}>QUIZZES</h1>
       </Container>
 
       <BrowserRouter>
