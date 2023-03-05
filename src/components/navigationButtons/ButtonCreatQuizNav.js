@@ -4,7 +4,7 @@ import Image from 'react-bootstrap/Image';
 
 const ButtonCreatQuizNav = () => {
   return (
-    <Link to="/create_quiz">
+    <Link to="/create_quiz" style={{ textDecoration: 'none' }}>
       <button
         style={{ backgroundColor: '#fab9b9', borderRadius: '50px', marginTop: '55px' }}>
         <Image fluid

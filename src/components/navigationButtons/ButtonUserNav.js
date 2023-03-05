@@ -4,7 +4,7 @@ import Image from 'react-bootstrap/Image';
 
 const ButtonUserNav = () => {
   return (
-    <Link to="/user">
+    <Link to="/user" style={{ textDecoration: 'none' }}>
       <button
         style={{ backgroundColor: '#a2f0f9', borderRadius: '50px', marginTop: '15px' }}>
         <Image fluid
