@@ -11,12 +11,12 @@ const ButtonCreateQuiz = () => {
   return (
     <Container fluid='md'>
       <Card style={{
-        borderRadius: "7px",
-        background: 'linear-gradient(#bbb2a2, #fcf5e4, #ffffff, #fcf5e4, #bbb2a2)',
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
         textAlign: 'center',
         padding: '4%',
         marginTop: '35px',
-        borderRadius: '50px'
+        borderRadius: '50px',
+        cursor: 'pointer'
       }}
       onClick={() => quizContext.dispatch({ type: "submitQuiz" })}
       >

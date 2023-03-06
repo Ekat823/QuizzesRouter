@@ -3,56 +3,86 @@ import Container from "react-bootstrap/Container";
 import { QuizContext } from "../App";
 import ButtonCreatQuizNav from "./navigationButtons/ButtonCreatQuizNav";
 import { Image } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 
 const UserPage = () => {
 
   const quizContext = useContext(QuizContext);
 
   return (
-    <Container fluid="md">
+    <>
 
       <h2 style={{ textAlign: "center", marginTop: "20px" }}>User Name</h2>
       <p style={{ textAlign: "center" }}>Score: {quizContext.state.userScore}</p>
 
       <ButtonCreatQuizNav />
 
-      <button
-        style={{ backgroundColor: '#a2f0f9', borderRadius: '50px', marginTop: '15px' }}>
-        <Image fluid
-          src={require('./images/storageBW.png')}
-          alt={'Storage_icon'}
-        />
-        <span>CREATED QUIZZES: 0</span>
-      </button>
+      <Card style={{
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+        textAlign: 'center',
+        padding: '2%',
+        marginTop: '15px',
+        borderRadius: '50px',
+        color: 'black',
+        cursor: 'pointer'
+      }}
+      >
+        CREATED QUIZZES: 0
+      </Card>
 
-      <button
-        style={{ backgroundColor: '#c9a1fb', borderRadius: '50px', marginTop: '15px' }}>
-        <Image fluid
-          src={require('./images/storageBW.png')}
-          alt={'Storage_icon'}
-        />
-        <span>FEATURED QUIZZES: 0</span>
-      </button>
+      <Card style={{
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+        textAlign: 'center',
+        padding: '2%',
+        marginTop: '15px',
+        borderRadius: '50px',
+        color: 'black',
+        cursor: 'pointer'
+      }}
+      >
+        FEATURED QUIZZES: 0
+      </Card>   
 
-      <button
-        style={{ backgroundColor: '#9bf9ab', borderRadius: '50px', marginTop: '15px' }}>
-        <Image fluid
-          src={require('./images/groupBW.png')}
-          alt={'Storage_icon'}
-        />
-        <span>GROUPS: 0</span> <span>INVITATIONS: 0</span>
-      </button>
+      <Card style={{
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+        textAlign: 'center',
+        padding: '2%',
+        marginTop: '15px',
+        borderRadius: '50px',
+        color: 'black',
+        cursor: 'pointer'
+      }}
+      >
+        GROUPS: 0
+      </Card> 
+      
+      <Card style={{
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+        textAlign: 'center',
+        padding: '2%',
+        marginTop: '15px',
+        borderRadius: '50px',
+        color: 'black',
+        cursor: 'pointer'
+      }}
+      >
+        INVITATIONS: 0
+      </Card> 
 
-      <button
-        style={{ backgroundColor: '#f9f76d', borderRadius: '50px', marginTop: '15px' }}>
-        <Image fluid
-          src={require('./images/groupBW.png')}
-          alt={'Storage_icon'}
-        />
-        <span>CREATE GROUP</span>
-      </button>
+      <Card style={{
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+        textAlign: 'center',
+        padding: '2%',
+        marginTop: '15px',
+        borderRadius: '50px',
+        color: 'black',
+        cursor: 'pointer'
+      }}
+      >
+        CREATE GROUP
+      </Card>
 
-    </Container >
+    </ >
   )
 }
 

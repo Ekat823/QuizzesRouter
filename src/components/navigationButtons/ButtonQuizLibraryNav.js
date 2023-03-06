@@ -1,18 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image from 'react-bootstrap/Image';
+import Card from "react-bootstrap/Card";
 
 const ButtonQuizLibraryNav = () => {
   return (
     <Link to="/quiz_library" style={{ textDecoration: 'none' }}>
-      <button
-        style={{ backgroundColor: '#9bf9ab', borderRadius: '50px', marginTop: '15px' }}>
-        <Image fluid
-          src={require('../images/storageBW.png')}
-          alt={'Storage_icon'}
-        />
-        <span>QUIZ LIBRARY</span>
-      </button>
+      <Card style={{
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+        textAlign: 'center',
+        padding: '2%',
+        marginTop: '15px',
+        borderRadius: '50px',
+        color: 'black'
+      }}
+      >
+        QUIZ LIBRARY
+      </Card>
     </Link>
   )
 }

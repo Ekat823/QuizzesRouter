@@ -1,7 +1,5 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
 import QuizTitle from "./componentsForCreateQuiz/QuizTitle";
 import QuizFile from "./componentsForCreateQuiz/QuizFile";
 import ButtonCreateQuiz from "./componentsForCreateQuiz/ButtonCreateQuiz";
@@ -16,8 +14,8 @@ const CardCreateQuiz = () => {
 
       <Card style={{
         width: '100%',
-        borderRadius: "7px",
-        background: 'linear-gradient(#bbb2a2, #fcf5e4, #fcf5e4, #ffffff, #fcf5e4, #fcf5e4, #bbb2a2)',
+        borderRadius: "15px",
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
         textAlign: 'center',
         marginTop: '25px',
       }}
@@ -27,8 +25,8 @@ const CardCreateQuiz = () => {
 
       <Card style={{
         width: '100%',
-        borderRadius: "7px",
-        background: 'linear-gradient(#bbb2a2, #fcf5e4, #fcf5e4, #ffffff, #fcf5e4, #fcf5e4, #bbb2a2)',
+        borderRadius: "15px",
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
         textAlign: 'center',
         marginTop: '15px',
       }}

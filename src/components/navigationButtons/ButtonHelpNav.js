@@ -1,18 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image from 'react-bootstrap/Image';
+import Card from "react-bootstrap/Card";
 
 const ButtonHelpNav = () => {
   return (
     <Link to="/help" style={{ textDecoration: 'none' }}>
-      <button
-        style={{ backgroundColor: '#f9f76d', borderRadius: '50px', marginTop: '15px' }}>
-        <Image fluid
-          src={require('../images/questionBW.png')}
-          alt={'Question_icon'}
-        />
-        <span>FAQ</span>
-      </button>
+      <Card style={{
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+        textAlign: 'center',
+        padding: '2%',
+        marginTop: '15px',
+        borderRadius: '50px',
+        color: 'black'
+      }}
+      >
+        FAQ
+      </Card>
     </Link>
   )
 }
