@@ -10,24 +10,26 @@ label {
 .btn-answer {
   width: 100%;
   height: auto;
-  background-color: white;
+  background: linear-gradient(#dad0bd, #fcf7eb, #ffffff, #fcf7eb, #dad0bd);
   color: black;
   padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  margin-top: 1%;
 }
 
 .btn-answer:hover {
-  background-color: #e0e3e4;
+  background: #e0e3e4;
 }
 
 .right-answer,
 .right-answer:hover {
-  background-color: green;
+  background: green;
   color: white;
 }
 
 .wrong-answer,
 .wrong-answer:hover {
-  background-color: red;
+  background: red;
   color: white;
 }
 /*--------------------------------*/

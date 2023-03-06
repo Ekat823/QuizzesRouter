@@ -24,7 +24,7 @@ const AdjustQuiz = () => {
         borderRadius: "15px",
         background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
         textAlign: 'center',
-        marginTop: '55px',
+        marginTop: '50px',
       }}
       >
         <Card.Body><SelectQuestion /></Card.Body>
@@ -40,17 +40,17 @@ const AdjustQuiz = () => {
       >
         <Card.Body><SelectAnswer /></Card.Body>
       </Card>
-<ButtonStartQuiz />
-      
+      <ButtonStartQuiz />
+
       <Card style={{
         width: '100%',
         border: "none",
         textAlign: 'center',
         marginTop: '30px',
       }}>
-      
 
-      <ButtonAnotherQuiz />
+
+        <ButtonAnotherQuiz />
       </Card>
 
 

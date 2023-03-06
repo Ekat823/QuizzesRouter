@@ -12,9 +12,12 @@ const ButtonAnotherQuiz = () => {
   return (
     <Container fluid='md'>
       <div style={{ alignContent: "center" }}>
+
+      <hr style={{marginTop: "60px",}}/>
+
         <button
           style={{
-            marginTop: "55px",
+            marginTop: "15px",
             background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
             color: 'black',
             border: '1px solid #c7bba5',
@@ -24,11 +27,11 @@ const ButtonAnotherQuiz = () => {
           }}
           onClick={() => quizContext.dispatch({ type: "goToAnotherQuiz" })}
         >
-          Create Another Quiz
+          Create Quiz
         </button>
         <Link to="/quiz_library" style={{ textDecoration: 'none' }}><button
           style={{
-            marginTop: "55px",
+            marginTop: "15px",
             marginLeft: "25px",
             background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
             color: 'black',
@@ -39,7 +42,7 @@ const ButtonAnotherQuiz = () => {
           }}
           onClick={() => quizContext.dispatch({ type: "goToAnotherQuiz" })}
         >
-          Go to Quiz Library
+          Quiz Library
         </button></Link>
       </div>
     </Container>
