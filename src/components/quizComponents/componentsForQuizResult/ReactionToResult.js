@@ -9,8 +9,8 @@ const ReactionToResult = () => {
     <>
       <h3
         style={{
-          marginTop: "15px",
-          marginBottom: "15px"
+          marginTop: "10px",
+          marginBottom: "10px"
         }}
       >
         {quizContext.state.averageScore / quizContext.state.taskNumber === 1 ? 

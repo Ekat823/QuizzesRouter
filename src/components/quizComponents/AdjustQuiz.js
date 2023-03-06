@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
-import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
 import SelectQuestion from "./componentsForAdjustQuiz/SelectQuestion";
 import SelectAnswer from "./componentsForAdjustQuiz/SelectAnswer";
 import ButtonStartQuiz from "./componentsForAdjustQuiz/ButtonStartQuiz";

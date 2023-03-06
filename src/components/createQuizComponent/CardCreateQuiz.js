@@ -17,7 +17,7 @@ const CardCreateQuiz = () => {
         borderRadius: "15px",
         background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
         textAlign: 'center',
-        marginTop: '25px',
+        marginTop: '65px',
       }}
       >
         <Card.Body><QuizTitle /></Card.Body>

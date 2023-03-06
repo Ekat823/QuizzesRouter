@@ -5,7 +5,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import SolvedTasks from "./componentsForQuizResult/SolvedTasks";
 import ReactionToResult from "./componentsForQuizResult/ReactionToResult";
 import ButtonOnceAgain from "./componentsForQuizResult/ButtonOnceAgain";
-import ButtonAnotherQuiz from "./componentsForQuizResult/ButtonAnotherQuiz";
+import ButtonAnotherQuiz from "./componentsForAdjustQuiz/ButtonAnotherQuiz";
 import { QuizContext } from "../../App";
 
 const QuizResult = () => {
@@ -13,75 +13,44 @@ const QuizResult = () => {
   const quizContext = useContext(QuizContext)
 
   return (
-    <Container>
-      <Card
-        style={{
-          maxWidth: "350px",
-          border: "1px solid black",
-          borderRadius: "7px"
-        }}
-      >
-        <Card.Img
-          src={require("./header.png")}
-          alt="Card image"
-          style={{ backgroundColor: "#002b37", borderRadius: "7px 7px 0 0" }}
-        />
-        <Card.ImgOverlay>
-          <Card.Header
-            as="h5"
-            style={{
-              color: "white",
-              marginTop: "-10px"
-            }}
-          >
-            {quizContext.state.quizTitle} <br />
-            <small><small>{quizContext.state.numOfTasks} tasks</small></small>
-          </Card.Header>
-        </Card.ImgOverlay>
+    <>
 
-        <Card.Body>
-          <ListGroup>
-            <ListGroup.Item
-              style={{
-                border: "2px solid white",
-                backgroundColor: "#002b37",
-                color: "white"
-              }}
-            >
-              <SolvedTasks />
-            </ListGroup.Item>
-            
-            <ListGroup.Item
-              style={{
-                border: "2px solid white",
-                backgroundColor: "#002b37",
-                color: "white"
-              }}
-            >
-              <ReactionToResult />
-            </ListGroup.Item>
-            
-            <ListGroup.Item
-              style={{
-                border: "2px solid white",
-                backgroundColor: "#002b37",
-                color: "white"
-              }}
-            >
-              <Card.Link>
-                <ButtonOnceAgain />
-              </Card.Link>
-             
-              <Card.Link>
-                <ButtonAnotherQuiz />
-              </Card.Link>
-            
-            </ListGroup.Item>
-          
-          </ListGroup>
-        </Card.Body>
+      <h2 style={{ textAlign: "center", marginTop: "20px" }}>{quizContext.state.quizTitle}</h2>
+      <p style={{ textAlign: "center" }}>{quizContext.state.numOfTasks} tasks</p>
+
+      <Card style={{
+        width: '100%',
+        borderRadius: "15px",
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+        textAlign: 'center',
+        marginTop: '50px',
+      }}
+      >
+        <Card.Body><SolvedTasks /></Card.Body>
       </Card>
-    </Container>
+
+      <Card style={{
+        width: '100%',
+        borderRadius: "15px",
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+        textAlign: 'center',
+        marginTop: '10px',
+      }}
+      >
+        <Card.Body><ReactionToResult /></Card.Body>
+      </Card>
+
+        <ButtonOnceAgain />
+
+      <Card style={{
+        width: '100%',
+        border: "none",
+        textAlign: 'center',
+        marginTop: '30px',
+      }}>
+        <ButtonAnotherQuiz />
+      </Card>
+    </>
   )
 }
 

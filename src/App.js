@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import Container from "react-bootstrap/Container";
-//import Row from "react-bootstrap/Row";
-//import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import reducer from "./reducer/Reducer";
 import getInitialState from "./state/GetInitialState";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -28,8 +28,18 @@ function App() {
   return (
     <QuizContext.Provider value={{ state: state, dispatch: dispatch }}>
 
-      <Container style={{textAlign: 'center'}}>
-        <h1 style={{color: '#5e5e5e', fontFamily: 'Lucida Console'}}>QUIZZES</h1>
+      <Container style={{ textAlign: 'center' }}>
+        <h1
+          style={{
+            color: '#5e5e5e',
+            fontFamily: 'Lucida Console',
+            fontSize: '4rem',
+            fontWeight: '800',
+            marginTop: '15px'
+          }}
+        >
+          QUIZZES
+        </h1>
       </Container>
 
       <BrowserRouter>
@@ -38,44 +48,72 @@ function App() {
 
           <Route index element={
             <Container>
-              <Home />
+              <Row className="justify-content-center">
+                <Col sm={12} md={8} lg={6}>
+                  <Home />
+                </Col>
+              </Row>
             </Container>
           } />
 
           <Route path="user" element={
             <Container>
-              <UserPage />
+              <Row className="justify-content-center">
+                <Col sm={12} md={8} lg={6}>
+                  <UserPage />
+                </Col>
+              </Row>
             </Container>
           } />
 
           <Route path="group" element={
             <Container>
-              <GroupPage />
+              <Row className="justify-content-center">
+                <Col sm={12} md={8} lg={6}>
+                  <GroupPage />
+                </Col>
+              </Row>
             </Container>
           } />
 
 
           <Route path="create_quiz" element={
             <Container>
-              <CreateQuiz />
+              <Row className="justify-content-center">
+                <Col sm={12} md={8} lg={6}>
+                  <CreateQuiz />
+                </Col>
+              </Row>
             </Container>
           } />
 
           <Route path="quiz_library" element={
             <Container>
-              <LibraryQuiz />
+              <Row className="justify-content-center">
+                <Col sm={12} md={8} lg={6}>
+                  <LibraryQuiz />
+                </Col>
+              </Row>
             </Container>
           } />
 
           <Route path="help" element={
             <Container>
-              <Help />
+              <Row className="justify-content-center">
+                <Col sm={12} md={8} lg={6}>
+                  <Help />
+                </Col>
+              </Row>
             </Container>
           } />
 
           <Route path="search" element={
             <Container>
-              <Search />
+              <Row className="justify-content-center">
+                <Col sm={12} md={8} lg={6}>
+                  <Search />
+                </Col>
+              </Row>
             </Container>
           } />
 

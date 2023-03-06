@@ -9,8 +9,8 @@ const SolvedTasks = () => {
     <>
       <p
         style={{
-          marginTop: "15px",
-          marginBottom: "15px"
+          marginTop: "10px",
+          marginBottom: "10px"
         }}
       >
         You've solved {quizContext.state.averageScore} {quizContext.state.averageScore === 1 ? "task" : "tasks"} <br />on the first try.
