@@ -23,10 +23,6 @@ const QuizFile = () => {
       </Form.Label>
       <Form.Control
         type="file"
-        style={{
-
-          border: "1px solid black",
-        }}
         onChange={(e) => getUserFile(e.target.files[0], quizContext.dispatch, quizContext.state)}
       />
     </>

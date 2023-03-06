@@ -14,7 +14,7 @@ const QuizTitle = () => {
       
         <Form.Control
           type="text"
-          style={{ color: "gray", textAlign: 'center', border: "1px solid black" }}
+          style={{ color: "gray", textAlign: 'center' }}
           placeholder="Quiz Title"
           onChange={(e) => quizContext.dispatch({ type: "getQuizTitle", payload: e.target.value })}
         />

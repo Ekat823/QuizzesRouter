@@ -10,9 +10,8 @@ const SelectQuestion = () => {
     <>
       <Form.Select
         style={{
-          marginTop: "25px",
-          marginBottom: "25px",
-          border: "1px solid black"
+          marginTop: "10px",
+          marginBottom: "10px",
         }}
         onChange={(e) => quizContext.dispatch({ 
           type: "selectQuestion", 

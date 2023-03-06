@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
@@ -9,74 +9,52 @@ import ButtonAnotherQuiz from "./componentsForAdjustQuiz/ButtonAnotherQuiz";
 import { QuizContext } from "../../App";
 
 const AdjustQuiz = () => {
-  
+
   const quizContext = useContext(QuizContext)
 
   return (
-    <Container>
+    <>
+
+      <h2 style={{ textAlign: "center", marginTop: "20px" }}>{quizContext.state.quizTitle}</h2>
+      <p style={{ textAlign: "center" }}>{quizContext.state.numOfTasks} tasks</p>
+
+
       <Card style={{
-        maxWidth: "350px",
-        border: "2px solid balck",
-        borderRadius: "7px"
+        width: '100%',
+        borderRadius: "15px",
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+        textAlign: 'center',
+        marginTop: '55px',
       }}
       >
-        <Card.Img
-          src={require("./header.png")}
-          alt="Card image"
-          style={{ backgroundColor: "#002b37", borderRadius: "7px 7px 0 0" }}
-        />
-        <Card.ImgOverlay>
-          <Card.Body
-            as="h5"
-            style={{
-              color: "white",
-              marginTop: "-20px"
-            }}
-          >
-            {quizContext.state.quizTitle} <br />
-            <small><small>{quizContext.state.numOfTasks} tasks</small></small>
-          </Card.Body>
-        </Card.ImgOverlay>
-
-        <Card.Body>
-          <ListGroup>
-            <ListGroup.Item
-              style={{
-                backgroundColor: "#002b37",
-                color: "white",
-                border: "2px solid white"
-              }}
-            >
-              <SelectQuestion />
-            </ListGroup.Item>
-
-            <ListGroup.Item
-              style={{
-                backgroundColor: "#002b37",
-                color: "white",
-                border: "2px solid white"
-              }}
-            >
-              <SelectAnswer />
-            </ListGroup.Item>
-            <ListGroup.Item
-              style={{
-                backgroundColor: "#002b37",
-                color: "white",
-                border: "2px solid white"
-              }}
-            >
-              <Card.Link>
-                <ButtonStartQuiz />
-              </Card.Link>
-              <Card.Link>
-                <ButtonAnotherQuiz />
-              </Card.Link>
-            </ListGroup.Item>
-          </ListGroup>
-        </Card.Body>
+        <Card.Body><SelectQuestion /></Card.Body>
       </Card>
-    </Container >
+
+      <Card style={{
+        width: '100%',
+        borderRadius: "15px",
+        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+        textAlign: 'center',
+        marginTop: '10px',
+      }}
+      >
+        <Card.Body><SelectAnswer /></Card.Body>
+      </Card>
+<ButtonStartQuiz />
+      
+      <Card style={{
+        width: '100%',
+        border: "none",
+        textAlign: 'center',
+        marginTop: '30px',
+      }}>
+      
+
+      <ButtonAnotherQuiz />
+      </Card>
+
+
+    </>
   )
 }
 
