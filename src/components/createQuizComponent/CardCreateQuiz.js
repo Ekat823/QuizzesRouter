@@ -10,65 +10,59 @@ import ButtonCreateQuiz from "./componentsForCreateQuiz/ButtonCreateQuiz";
 const CardCreateQuiz = () => {
 
   return (
-    <Container>
+    <>
       <Card style={{
-        maxWidth: "350px",
+        width: '100%',
         border: "2px solid balck",
-        borderRadius: "7px"
+        borderRadius: "7px",
+        backgroundColor: '#fab9b9',
+        textAlign: 'center',
+        fontSize: '1.5rem',
+        marginTop: '45px'
       }}
       >
-        <Card.Img
-          src={require("./header.png")}
-          alt="Card image"
-          style={{ backgroundColor: "#002b37", borderRadius: "7px 7px 0 0" }}
-        />
-        <Card.ImgOverlay>
-          <Card.Body
-            as="h5"
-            style={{
-              color: "white",
-              marginTop: "-10px"
-            }}
-          >
-            Create Quiz
-          </Card.Body>
-        </Card.ImgOverlay>
-
-        <Card.Body>
-          <ListGroup>
-            <ListGroup.Item
-              style={{
-                backgroundColor: "#002b37",
-                color: "white",
-                border: "2px solid white"
-              }}
-            >
-              <QuizTitle />
-            </ListGroup.Item>
-
-            <ListGroup.Item
-              style={{
-                backgroundColor: "#002b37",
-                color: "white",
-                border: "2px solid white"
-              }}
-            >
-              <QuizFile />
-            </ListGroup.Item>
-
-            <ListGroup.Item
-              style={{
-                backgroundColor: "#002b37",
-                color: "white",
-                border: "2px solid white"
-              }}
-            >
-              <ButtonCreateQuiz />
-            </ListGroup.Item>
-          </ListGroup>
-        </Card.Body>
+        <Card.Body>CREATE QUIZ</Card.Body>
       </Card>
-    </Container >
+
+      <Card style={{
+        width: '100%',
+        border: "2px solid balck",
+        borderRadius: "7px",
+        backgroundColor: '#fab9b9',
+        textAlign: 'center',
+        fontSize: '1.5rem',
+        marginTop: '15px'
+      }}
+      >
+        <Card.Body><QuizTitle /></Card.Body>
+      </Card>
+
+      <Card style={{
+        width: '100%',
+        border: "2px solid balck",
+        borderRadius: "7px",
+        backgroundColor: '#fab9b9',
+        textAlign: 'center',
+        fontSize: '1.5rem',
+        marginTop: '15px'
+      }}
+      >
+        <Card.Body><QuizFile /></Card.Body>
+      </Card>
+
+      <Card style={{
+        width: '100%',
+        border: "2px solid balck",
+        borderRadius: "7px",
+        backgroundColor: '#fab9b9',
+        textAlign: 'center',
+        fontSize: '1.5rem',
+        marginTop: '15px'
+      }}
+      >
+        <Card.Body><ButtonCreateQuiz /></Card.Body>
+      </Card>
+    </ >
   )
 }
 

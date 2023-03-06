@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Container } from "react-bootstrap";
+//import { Container } from "react-bootstrap";
 import Image from 'react-bootstrap/Image'
 
 const NavBar = () => {
@@ -26,14 +26,6 @@ const NavBar = () => {
             src={require('./images/user.png')}
             style={{ padding: "10% 30% 10% 30%" }}
             alt={'User_icon'}
-          />
-        </NavLink>
-
-        <NavLink to="/group">
-          <Image fluid
-            src={require('./images/group.png')}
-            style={{ padding: "10% 30% 10% 30%" }}
-            alt={'Group_icon'}
           />
         </NavLink>
 

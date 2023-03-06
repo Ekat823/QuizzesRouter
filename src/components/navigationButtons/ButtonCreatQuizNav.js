@@ -6,7 +6,7 @@ const ButtonCreatQuizNav = () => {
   return (
     <Link to="/create_quiz" style={{ textDecoration: 'none' }}>
       <button
-        style={{ backgroundColor: '#fab9b9', borderRadius: '50px', marginTop: '55px' }}>
+        style={{ backgroundColor: '#fab9b9', borderRadius: '50px', marginTop: '15px' }}>
         <Image fluid
           src={require('../images/createBW.png')}
           alt={'Create_icon'}

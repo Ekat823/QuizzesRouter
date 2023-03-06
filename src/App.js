@@ -29,7 +29,7 @@ function App() {
     <QuizContext.Provider value={{ state: state, dispatch: dispatch }}>
 
       <Container style={{textAlign: 'center'}}>
-        <h1 style={{fontWeight: 700}}>QUIZZES</h1>
+        <h1 style={{color: '#5e5e5e', fontFamily: 'Lucida Console'}}>QUIZZES</h1>
       </Container>
 
       <BrowserRouter>
