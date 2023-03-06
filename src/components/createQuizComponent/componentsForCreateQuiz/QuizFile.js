@@ -11,7 +11,7 @@ const QuizFile = () => {
 
   return (
     <>
-      <Form.Label>Prepare xlsx file. <Badge
+      <Form.Label>Prepare xlsx file <Badge
         bg="light"
         style={{
           color: "black",
@@ -19,12 +19,12 @@ const QuizFile = () => {
           border: "1px solid gray",
           padding: "1px 3px 3px 3px",
           cursor: "pointer",
-        }}> Example </Badge> <br />Upload it.
+        }}> Example </Badge> <br />Upload it
       </Form.Label>
       <Form.Control
         type="file"
         style={{
-          marginBottom: "25px",
+
           border: "1px solid black",
         }}
         onChange={(e) => getUserFile(e.target.files[0], quizContext.dispatch, quizContext.state)}

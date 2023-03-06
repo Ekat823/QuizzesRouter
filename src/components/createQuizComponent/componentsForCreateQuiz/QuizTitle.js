@@ -10,12 +10,11 @@ const QuizTitle = () => {
   return (
     <>
       <Form.Label>
-        Provide relevant title for your quiz.
+        Provide relevant title for your quiz
       </Form.Label>
       <FloatingLabel
         label="Quiz Title"
         style={{
-          marginBottom: "25px",
           color: "gray",
           paddingTop: "15px",
         }}

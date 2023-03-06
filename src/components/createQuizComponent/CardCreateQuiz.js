@@ -11,27 +11,15 @@ const CardCreateQuiz = () => {
 
   return (
     <>
-      <Card style={{
-        width: '100%',
-        border: "2px solid balck",
-        borderRadius: "7px",
-        backgroundColor: '#fab9b9',
-        textAlign: 'center',
-        fontSize: '1.5rem',
-        marginTop: '45px'
-      }}
-      >
-        <Card.Body>CREATE QUIZ</Card.Body>
-      </Card>
+
+      <h2 style={{ textAlign: "center", marginTop: "20px" }}>CREATE QUIZ</h2>
 
       <Card style={{
         width: '100%',
-        border: "2px solid balck",
         borderRadius: "7px",
-        backgroundColor: '#fab9b9',
+        background: 'linear-gradient(#bbb2a2, #fcf5e4, #fcf5e4, #ffffff, #fcf5e4, #fcf5e4, #bbb2a2)',
         textAlign: 'center',
-        fontSize: '1.5rem',
-        marginTop: '15px'
+        marginTop: '25px',
       }}
       >
         <Card.Body><QuizTitle /></Card.Body>
@@ -39,29 +27,16 @@ const CardCreateQuiz = () => {
 
       <Card style={{
         width: '100%',
-        border: "2px solid balck",
         borderRadius: "7px",
-        backgroundColor: '#fab9b9',
+        background: 'linear-gradient(#bbb2a2, #fcf5e4, #fcf5e4, #ffffff, #fcf5e4, #fcf5e4, #bbb2a2)',
         textAlign: 'center',
-        fontSize: '1.5rem',
-        marginTop: '15px'
+        marginTop: '15px',
       }}
       >
         <Card.Body><QuizFile /></Card.Body>
       </Card>
 
-      <Card style={{
-        width: '100%',
-        border: "2px solid balck",
-        borderRadius: "7px",
-        backgroundColor: '#fab9b9',
-        textAlign: 'center',
-        fontSize: '1.5rem',
-        marginTop: '15px'
-      }}
-      >
-        <Card.Body><ButtonCreateQuiz /></Card.Body>
-      </Card>
+      <ButtonCreateQuiz />
     </ >
   )
 }

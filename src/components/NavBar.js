@@ -8,7 +8,7 @@ import Image from 'react-bootstrap/Image'
 const NavBar = () => {
   return (
 
-    <Navbar className="justify-content-center" bg="secondary" variant="dark" style={{ padding: "3px" }} >
+    <Navbar className="justify-content-center" style={{ padding: "3px", backgroundColor: '#69645b' }} >
 
       <Navbar.Brand ></Navbar.Brand>
 
