@@ -9,57 +9,39 @@ const Library = () => {
   const quizContext = useContext(QuizContext);
 
   return (
-    <Container>
+    <>
+      <h2 style={{ textAlign: "center", marginTop: "20px" }}>Quiz Library</h2>
 
       <Card style={{
-        maxWidth: "350px",
+        width: "100%",
         maxHeight: "550px",
-        border: "1px solid balck",
-        borderRadius: "7px"
+        border: "none",
       }}
       >
-        <Card.Img
-          src={require("./header.png")}
-          alt="Card image"
-          style={{ backgroundColor: "#002b37", borderRadius: "7px 7px 0 0" }}
-
-        />
-        <Card.ImgOverlay>
-          <Card.Body
-            as="h5"
-            style={{
-              color: "white",
-              marginTop: "-10px"
-            }}
-          >
-            Quiz Library
-          </Card.Body>
-        </Card.ImgOverlay>
 
         <Card.Body style={{ overflowX: "hidden" }}>
           <ListGroup>
 
-          {quizContext.state.categories.sort().map((el, i) => (
-            <ListGroup.Item
-            style={{
-              border: "1px solid white",
-              backgroundColor: "#002b37",
-              borderRadius: "7px",
-              color: "white",
-              marginTop: "1px",
-              marginBottom: "1px"
-            }}
-            key={i}
-            action
-            >             
-                {el}            
-            </ListGroup.Item>
-          )
-          )}
+            {quizContext.state.categories.sort().map((el, i) => (
+              <ListGroup.Item
+                style={{
+                  background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+                  textAlign: 'center',
+                  marginTop: '1%',
+                  borderRadius: '50px',
+                  color: 'black'
+                }}
+                key={i}
+                action
+              >
+                {el}
+              </ListGroup.Item>
+            )
+            )}
           </ListGroup>
         </Card.Body>
       </Card>
-    </Container >
+    </ >
   )
 }
 
