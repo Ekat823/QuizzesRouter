@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
 import { QuizContext } from "../App";
 import ButtonCreatQuizNav from "./navigationButtons/ButtonCreatQuizNav";
-import { Image } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 
 const UserPage = () => {
@@ -41,7 +40,22 @@ const UserPage = () => {
       }}
       >
         FEATURED QUIZZES: 0
-      </Card>   
+      </Card>
+
+      <Link to="/group" style={{ textDecoration: 'none' }}>
+        <Card style={{
+          background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
+          textAlign: 'center',
+          padding: '2%',
+          marginTop: '15px',
+          borderRadius: '50px',
+          color: 'black',
+          cursor: 'pointer'
+        }}
+        >
+          GROUPS: 0
+        </Card>
+      </Link>
 
       <Card style={{
         background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
@@ -53,21 +67,8 @@ const UserPage = () => {
         cursor: 'pointer'
       }}
       >
-        GROUPS: 0
-      </Card> 
-      
-      <Card style={{
-        background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
-        textAlign: 'center',
-        padding: '2%',
-        marginTop: '15px',
-        borderRadius: '50px',
-        color: 'black',
-        cursor: 'pointer'
-      }}
-      >
         INVITATIONS: 0
-      </Card> 
+      </Card>
 
       <Card style={{
         background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
