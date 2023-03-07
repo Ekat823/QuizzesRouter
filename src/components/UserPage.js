@@ -12,7 +12,7 @@ const UserPage = () => {
   return (
     <>
 
-      <h2 style={{ textAlign: "center", marginTop: "20px" }}>User Name</h2>
+      <h2 style={{ textAlign: "center", marginTop: "40px" }}>User Name</h2>
       <p style={{ textAlign: "center" }}>Score: {quizContext.state.userScore}</p>
 
       <ButtonCreatQuizNav />

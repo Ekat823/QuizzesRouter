@@ -10,7 +10,7 @@ const Library = () => {
 
   return (
     <>
-      <h2 style={{ textAlign: "center", marginTop: "20px" }}>Quiz Library</h2>
+      <h2 style={{ textAlign: "center", marginTop: "40px" }}>QUIZ LIBRARY</h2>
 
       <Card style={{
         width: "100%",

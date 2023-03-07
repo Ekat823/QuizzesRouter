@@ -17,12 +17,8 @@ const GroupPage = () => {
         borderRadius: "7px"
       }}
       >
-        <Card.Img
-          src={require("./header.png")}
-          alt="Card image"
-          style={{ backgroundColor: "#002b37", borderRadius: "7px 7px 0 0" }}
-        />
-        <Card.ImgOverlay>
+        
+        
           <Card.Body
             as="h5"
             style={{
@@ -33,7 +29,7 @@ const GroupPage = () => {
           >
             Group Name
           </Card.Body>
-        </Card.ImgOverlay>
+        
 
         <Card.Body>
           <ListGroup>

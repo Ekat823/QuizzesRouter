@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 
-const ButtonHelpNav = () => {
+const ButtonSearchNav = () => {
   return (
-    <Link to="/help" style={{ textDecoration: 'none' }}>
+    <Link to="/search" style={{ textDecoration: 'none' }}>
       <Card style={{
         background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
         textAlign: 'center',
@@ -14,10 +14,10 @@ const ButtonHelpNav = () => {
         color: 'black'
       }}
       >
-        HELP
+        SEARCH
       </Card>
     </Link>
   )
 }
 
-export default ButtonHelpNav
+export default ButtonSearchNav

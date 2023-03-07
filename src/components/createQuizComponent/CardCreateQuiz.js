@@ -10,14 +10,14 @@ const CardCreateQuiz = () => {
   return (
     <>
 
-      <h2 style={{ textAlign: "center", marginTop: "20px" }}>CREATE QUIZ</h2>
+      <h2 style={{ textAlign: "center", marginTop: "40px" }}>CREATE QUIZ</h2>
 
       <Card style={{
         width: '100%',
         borderRadius: "15px",
         background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
         textAlign: 'center',
-        marginTop: '65px',
+        marginTop: '55px',
       }}
       >
         <Card.Body><QuizTitle /></Card.Body>
@@ -28,7 +28,7 @@ const CardCreateQuiz = () => {
         borderRadius: "15px",
         background: 'linear-gradient(#c7bba5, #fcf5e4, #fefbf5, #fcf5e4, #c7bba5)',
         textAlign: 'center',
-        marginTop: '15px',
+        marginTop: '25px',
       }}
       >
         <Card.Body><QuizFile /></Card.Body>

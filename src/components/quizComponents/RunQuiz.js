@@ -15,7 +15,7 @@ const RunQuiz = () => {
   return (
     <>
 
-      <h2 style={{ textAlign: "center", marginTop: "20px" }}>{quizContext.state.quizTitle}</h2>
+      <h2 style={{ textAlign: "center", marginTop: "40px" }}>{quizContext.state.quizTitle}</h2>
       <p style={{ textAlign: "center" }}>{quizContext.state.numOfTasks} tasks</p>
 
 
